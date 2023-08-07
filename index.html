@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Salvar Vídeos do YouTube</title>
+</head>
+
+<body>
+    <h1>Salvar Vídeos do YouTube</h1>
+    <form id="meuFormulario">
+        <label for="videoLink">Link do Vídeo do YouTube:</label>
+        <input type="url" id="videoLink" name="videoLink" required>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <h2>Vídeos Salvos:</h2>
+    <div id="videosSalvos"></div>
+
+    <!-- Adicione a biblioteca do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <!-- Incluir o script JavaScript -->
+    <script src="java.js"></script>
+</body>
+
+</html>
